@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.UDBPlus" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">#0D47A1</item>
+        <item name="colorPrimaryVariant">#002171</item>
+        <item name="colorSecondary">#006064</item>
+
+        <!-- Fondo de la ventana -->
+        <item name="android:windowBackground">#121212</item>
+
+        <!-- Texto -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B0BEC5</item>
+
+        <!-- Botones -->
+        <item name="colorButtonNormal">#1E88E5</item>
+
+        <!-- Entrada de texto -->
+        <item name="colorControlNormal">#B0BEC5</item>
+        <item name="colorControlActivated">#1E88E5</item>
+        <item name="colorControlHighlight">#64B5F6</item>
+
+        <!-- Otros -->
+        <item name="colorError">#CF6679</item>
+        <item name="colorSurface">#212121</item>
+    </style>
+</resources>
