@@ -1,0 +1,99 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        <!-- Foto del usuario -->
+        <ImageView
+                android:id="@+id/imageViewUserPhoto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_user_placeholder"
+                android:contentDescription="Foto del usuario"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circle" />
+
+        <!-- Nombre del usuario -->
+        <TextView
+                android:id="@+id/textViewUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Usuario"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+        <!-- Correo actual -->
+        <TextView
+                android:id="@+id/textViewUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="correo@ejemplo.com"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center" />
+
+        <!-- Campo para actualizar correo -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar Correo"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/editTextNewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nuevo correo electrónico"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
+
+        <!-- Campo para actualizar contraseña -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar Contraseña"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/editTextNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nueva contraseña"
+                android:inputType="textPassword"
+                android:layout_marginBottom="16dp" />
+
+        <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar nueva contraseña"
+                android:inputType="textPassword"
+                android:layout_marginBottom="24dp" />
+
+        <!-- Botón para guardar cambios -->
+        <Button
+                android:id="@+id/buttonSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Cambios"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

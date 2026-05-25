@@ -1,0 +1,144 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Imagen del Evento -->
+        <ImageView
+                android:id="@+id/imageViewEvent"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Imagen del evento"
+                android:layout_marginBottom="16dp" />
+
+        <!-- Información del Evento -->
+        <TextView
+                android:id="@+id/textViewEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título del Evento"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+        <TextView
+                android:id="@+id/textViewEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción del Evento"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+        <TextView
+                android:id="@+id/textViewEventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha del Evento"
+                android:layout_marginBottom="4dp" />
+
+        <TextView
+                android:id="@+id/textViewEventTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora del Evento"
+                android:layout_marginBottom="4dp" />
+
+        <TextView
+                android:id="@+id/textViewEventLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicación del Evento"
+                android:layout_marginBottom="16dp" />
+
+        <!-- Botones de acción en una fila -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+            <Button
+                    android:id="@+id/buttonShareEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Compartir" />
+
+            <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            <Button
+                    android:id="@+id/buttonConfirmAttendance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Confirmar" />
+        </LinearLayout>
+
+        <!-- Línea divisoria -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="16dp" />
+
+        <!-- Agregar comentario -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar un comentario"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+        <EditText
+                android:id="@+id/editTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe tu comentario"
+                android:layout_marginBottom="8dp" />
+
+        <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_marginBottom="16dp" />
+
+
+        <Button
+                android:id="@+id/buttonAddComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Comentario"
+                android:layout_marginBottom="16dp" />
+
+        <!-- Sección de comentarios -->
+        <TextView
+                android:id="@+id/textViewCommentsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comentarios"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

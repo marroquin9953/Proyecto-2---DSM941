@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <!-- Imagen del evento -->
+        <ImageView
+                android:id="@+id/imageViewEvent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Imagen del Evento"
+                android:layout_alignParentStart="true" />
+
+        <!-- Título del evento -->
+        <TextView
+                android:id="@+id/textViewEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título del Evento"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/imageViewEvent"
+                android:layout_marginStart="16dp"
+                android:layout_alignTop="@id/imageViewEvent"
+                android:layout_alignParentEnd="true" />
+
+        <!-- Fecha del evento -->
+        <TextView
+                android:id="@+id/textViewEventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textSize="14sp"
+                android:layout_below="@id/textViewEventTitle"
+                android:layout_toEndOf="@id/imageViewEvent"
+                android:layout_marginStart="16dp" />
+
+        <!-- Ubicación del evento -->
+        <TextView
+                android:id="@+id/textViewEventLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textSize="14sp"
+                android:layout_below="@id/textViewEventDate"
+                android:layout_toEndOf="@id/imageViewEvent"
+                android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

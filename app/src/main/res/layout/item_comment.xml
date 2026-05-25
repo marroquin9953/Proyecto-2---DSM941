@@ -1,0 +1,29 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground">
+
+    <!-- Texto del comentario -->
+    <TextView
+            android:id="@+id/textViewCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comentario del usuario"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+    <!-- Calificación -->
+    <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_marginBottom="16dp" />
+
+</LinearLayout>

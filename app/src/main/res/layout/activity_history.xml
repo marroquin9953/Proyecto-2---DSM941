@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <!-- Filtros -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+        <EditText
+                android:id="@+id/editTextFilterDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Filtrar por fecha"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true" />
+
+        <Button
+                android:id="@+id/buttonApplyFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplicar" />
+    </LinearLayout>
+
+    <!-- Estadísticas -->
+    <TextView
+            android:id="@+id/textViewStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estadísticas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+        <TextView
+                android:id="@+id/textViewTotalEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de eventos: 0" />
+
+        <TextView
+                android:id="@+id/textViewTotalParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de participantes: 0" />
+    </LinearLayout>
+
+    <!-- Lista de eventos -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp" />
+</LinearLayout>
