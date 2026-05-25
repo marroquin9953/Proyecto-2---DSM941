@@ -1,0 +1,22 @@
+# Local Android SDK path — machine-specific, never commit
+local.properties
+
+# JVM crash logs
+hs_err_pid*.log
+
+# Gradle build outputs
+.gradle/
+build/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Firebase — contains sensitive project credentials
+google-services.json
+
+# OS files
+.DS_Store
+Thumbs.db
